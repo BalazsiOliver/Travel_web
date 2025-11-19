@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balance Sheet</title>
     <link rel="stylesheet" href="./styles.css">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
+    <link rel="stylesheet" href="./javscript.js">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+      <script src="./javscript.js"></script>
   </head>
 
   <body>
     <section class="navigation">
+      <div class="topnav">
       <ul>
-        <li><img src="img/logo-fehér.png" width="64"></li>
-        <li><a href="#home" class="active">Kezdőlap</a></li>
-        <li><a href="#news">Tanácsadás</a></li>
         <li><a href="#contact">Kapcsolat</a></li>
-        <li style="float:right"><a href="#about">Csomagok</a></li>
-      </ul>
+        <li><a href="#news">Tanácsadás</a></li>
+        <li><a href="#home" class="active">Kezdőlap</a></li>
+        <li style="float:left;"><img id="logo" src="img/logo-fehér.png"  width="64"></li>
+      </ul>        <!-- Navigation links (hidden by default) -->
+        <div class="burger">
+          <a href="#home" class="active">Logo</a>
+          <div id="myLinks">
+          <a href="#contact">Kapcsolat</a>
+          <a href="#news">Tanácsadás</a>
+          <a href="#home" class="active">Kezdőlap</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
     </section>
     <section class="heading">
         <header class="hero">
