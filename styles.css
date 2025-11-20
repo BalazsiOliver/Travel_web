@@ -2,15 +2,15 @@ body{
     margin: 0;
 }
 
-@media screen and (max-width: 992px) {
-    .topnav {
+@media screen and (min-width: 700px) {
+    .burger {
         display: none;
     }
 }
 
-@media screen and (min-width: 200px) {
-    .burger {
-        display:flex;
+@media screen and (max-width: 700px) {
+    .navList {
+        display: none;
     }
 }
 
@@ -85,4 +85,9 @@ li a {
 .active {
   background-color: #04AA6D;
   color: white;
+}
+
+.gap {
+    height: 48px;
+    background-color: white;
 }
