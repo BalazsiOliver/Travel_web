@@ -13,18 +13,21 @@
   </head>
 
   <body>
-
-    <iframe class="bg-spline"
-      src="https://my.spline.design/earthcopy-WRysi5td9KBXkGmHApIhfBDa/">
-    </iframe>
-
-    <div class="topnav">
-    <img id="logo" src="img/mega-creator (2).png">
+    <div id="background">
+      <iframe class="bg-spline"
+        src="https://my.spline.design/earthcopy-WRysi5td9KBXkGmHApIhfBDa/">
+      </iframe>
+    </div>
+    
+    <header id="header">
+      <img id="logo" src="img/mega-creator (2).png">
+      <nav class="topnav">
         <ul class="navList">
           <li><a href="#contact">Kapcsolat</a></li>
           <li><a href="#news">Tanácsadás</a></li>
           <li><a href="#home" class="active">Kezdőlap</a></li>
-        </ul>        <!-- Navigation links (hidden by default) -->
+        </ul>
+        
         <div class="burger">
           <div id="myLinks">
           <a href="#contact">Kapcsolat</a>
@@ -35,11 +38,10 @@
             <i class="fa fa-bars"></i>
           </a>
         </div>
-      </div>
-
+      </nav>
+    </header>
       
-    <section class="heading">
-        <header class="hero">
+    <section id="hero">
             <h1>ÚtNeked</h1>
             <h2>Mi megtaláljuk az utad</h2>
             <h3>Luxus testreszabott utazás kínáluk,
@@ -47,12 +49,45 @@
             <form for >   
                 <button>Fedezd Fel</button>
             </form>
-        </header>
     </section>
 
-    <a href="https://www.facebook.com/example/">
-            <i class="fab fa-facebook-f"></i>
-          </a>
+    <div class="container">
+      <section class="features">
+        <img src="img/women-on-beach.jpg" width="200px"/>
+        <h4>🌍✈️Utazási Tanácsadás</h4>
+        <p>Velünk az utazás egyszerre kényelmes, gondtalan és 
+          pénztárcabarát!  Utazási tanácsadóként segítünk megtervezni 
+          álmaid útját, miközben megtaláljuk számodra a legjobb és legolcsóbb 
+          jegyeket, hogy te csak az élményekre koncentrálhass.
+        </p>
+        <button>Fedezd Fel</button>
 
+        <img src="img/pavilon-entrance.jpg" width="200px"/>
+        <h4>Különleges Ajánlataink</h4>
+        <p>Fedezd fel napi ajánlatainkat, ahol előre megtervezett, 
+          egzotikus utazások várnak rád!  Csak válaszd ki a számodra 
+          legvonzóbb úti célt, és már ma útra is kelhetsz mi mindent 
+          előkészítettünk, hogy neked csak élvezned kelljen az utazást.
+        </p>
+        <button>Tekintsd Meg</button>
+      </section>
+
+      <section class="contact">
+        <h2 id="contact-title">Kapcsolat</h2>
+        <p>Ha kérdésed van az utazási tanácsadással kapcsolatban,
+          vagy szeretnél egy kalkulációt , kérlek írj e-mailt !
+        </p>
+        <button>Tovább</button>
+        <a href="https://www.facebook.com/example/">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+      </section>
+
+      <footer>
+        <a href="#">Adatvédelmi Tájékoztató</a>
+        <a href="#">Általános Szerződési Feltételek</a>
+        <a href="#">Cookie szabályzat</a>
+      </footer>
+    </div>
   </body>
 </html>

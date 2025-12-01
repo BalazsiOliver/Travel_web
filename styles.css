@@ -1,14 +1,22 @@
-body{
-    margin: 0;
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 701px) {
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 731px) {
     .burger {
         display: none;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 730px) {
     .navList {
         display: none;
     }
@@ -113,12 +121,43 @@ li a {
     float: left;
 }
 
-.hero{
+#hero{
   text-align: center;
   margin-top: 25vh;
   white-space: pre-line;
 }
 
-.hero h1, h2, p{
+#hero h1, h2, h3{
   margin: 0;
+  font-family: "Poppins", sans-serif;
+  
 }
+
+#hero h1{
+  font-size: 50px;
+}
+
+#hero h2{
+  font-size: 30px;
+}
+
+#hero h3{
+  font-size: 21px;
+}
+
+
+
+/* TEST! PICTURE -> TEXT LAYOUT
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 64px;
+gap: 48px;
+
+position: relative;
+width: 1200px;
+height: 479px;
+
+background: #FFFFFF;
+opacity: 0.8;
+*/
