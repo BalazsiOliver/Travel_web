@@ -10,6 +10,14 @@ html {
   font-size: 62.5%;
 }
 
+.background{
+  overflow-x: visible;
+}
+
+.background .cloud{
+  width: 2000px;
+}
+
 .bg-spline {
     position: fixed;
     top: 5vh;
@@ -21,19 +29,35 @@ html {
     pointer-events: none; /* makes it untouchable */
   }
 
+  .cloud{
+    position: absolute;
+  }
+
+  #right-bottom{
+     margin-top: 100px;
+    right: -200px;
+    max-width: 700px;
+  }
+
+  #left-bottom{
+    max-width: 250px;
+    margin-top: 300px;
+    left: 50px;
+  }
+
 .topnav {
   overflow: hidden;
   background-color: #333;
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1.7rem 2rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 21px;
 }
 
 .topnav a:hover {
@@ -72,25 +96,9 @@ html {
   }
 }
 #logo{
-  width: 80px;
   float: left;
+  height: 5.9rem;
 }
-
-/* TEST! PICTURE -> TEXT LAYOUT
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 64px;
-gap: 48px;
-
-position: relative;
-width: 1200px;
-height: 479px;
-
-background: #FFFFFF;
-opacity: 0.8;
-*/
-
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -161,4 +169,25 @@ h2{
 
 h3{
   font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
 }
+
+
+
+/* TEST! PICTURE -> TEXT LAYOUT
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 64px;
+gap: 48px;
+
+position: relative;
+width: 1200px;
+height: 479px;
+
+background: #FFFFFF;
+opacity: 0.8;
+*/
+
