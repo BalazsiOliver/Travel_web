@@ -19,8 +19,10 @@
       <iframe class="bg-spline"
         src="https://my.spline.design/earthcopy-WRysi5td9KBXkGmHApIhfBDa/">
       </iframe>
-      <img class="cloud" id="right-bottom" src="img/r-b-cloud.png" loading="lazy" />
-      <img class="cloud" id="left-bottom"  src="img/l-b-cloud.png" loading="lazy" />
+      <img class="cloud" id="right-bottom-cloud" src="img/r-b-cloud.png" loading="lazy" />
+      <img class="cloud" id="left-bottom-cloud"  src="img/l-b-cloud.png" loading="lazy" />
+      <img class="cloud" id="right-top-cloud"  src="img/r-t-cloud-r-removebg-preview.png" loading="lazy" />
+      <img class="cloud" id="left-top-cloud"  src="img/l-t-cloud-r.png" loading="lazy" />
     </div>
 
 
@@ -30,7 +32,7 @@
   <a href="#about">Mért velünk</a>
   <a href="#about">Hogyan működik</a>
   <a href="#contact">Kapcsolat</a>
-  <a href="#news"  class="active" >kezdőlap</a>
+  <a href="#news"  class="active" >Kezdőlap</a>
   <a onclick="openNav()" class="icon">
     <i class="fa fa-bars"></i>
   </a>
@@ -45,36 +47,32 @@
   <a href="#about">Mért velünk</a>
 </div>
 
-<!-- Use any element to open the sidenav -->
-
-
-
-
-
-
     <section id="hero">
             <h1>ÚtNeked</h1>
             <h2>Mi megtaláljuk az utad</h2>
             <h3>Luxus testreszabott utazás kínáluk,
                hogy velünk pénzt és energiát spórolj!</h3>
             <form for >   
-                <button>Fedezd Fel</button>
+                <button url="#travel-counseling">Fedezd Fel</button>
             </form>
     </section>
 
-        <img src="img/pavilon-entrance.jpg"  loading="lazy" width="200px"/>
-        <h4>Különleges Ajánlataink</h4>
-        <p>Fedezd fel napi ajánlatainkat, ahol előre megtervezett, 
-          egzotikus utazások várnak rád!  Csak válaszd ki a számodra 
-          legvonzóbb úti célt, és már ma útra is kelhetsz mi mindent 
-          előkészítettünk, hogy neked csak élvezned kelljen az utazást.
-        </p>
-        <button>Tekintsd Meg</button>
+      <section id="special-offers">
+        <img src="img/pavilon-entrance.jpg"  loading="lazy"/>
+        <div class="special-content">
+          <h4>Különleges Ajánlataink</h4>
+          <p>Fedezd fel napi ajánlatainkat, ahol előre megtervezett, 
+            egzotikus utazások várnak rád!  Csak válaszd ki a számodra 
+            legvonzóbb úti célt, és már ma útra is kelhetsz mi mindent 
+            előkészítettünk, hogy neked csak élvezned kelljen az utazást.
+          </p>
+          <button>Tekintsd Meg</button>
+        </div>
       </section>
 
       
     <div class="container">
-      <section class="features">
+      <section id="travel-counseling" class="features">
         <img src="img/women-on-beach.jpg" loading="lazy" width="200px"/>
         <h4>🌍✈️Utazási Tanácsadás</h4>
         <p>Velünk az utazás egyszerre kényelmes, gondtalan és 
