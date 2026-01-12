@@ -6,22 +6,26 @@
   box-sizing: border-box;
 }
 
+:root{
+  --earth-pointer-color: rgb(238, 40, 40);
+}
+
 html {
   font-size: 62.5%;
   font-family: "Playfair Display", serif;
-  background-color: #8af77c46;
+  background-color: #87CEEB;
 }
-
 p{
   font-size: 2rem;
 }
 
+body{
+    overflow-x: hidden;
+
+}
 
 /* BACKGROUND STYLES */
 
-.background{
-  overflow-x: visible;
-}
 
 .background .cloud{
   width: 2000px;
@@ -40,6 +44,7 @@ p{
 
   .cloud{
     position: absolute;
+    z-index: -2;
   }
 
   #right-bottom-cloud{
@@ -65,19 +70,72 @@ p{
     max-width: 800px;
   }
 
+  .earth-pointer{
+    background-color: var(--earth-pointer-color);
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    top:14%;
+    right: 5%;
+    border-radius: 30px;
+    animation: fader 6s none 1s linear;
+    opacity: 0;
+  }
+
+  .arrow{
+    position: absolute;
+    right: 80%;
+    top: 280px;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 25vh solid var(--earth-pointer-color);
+    border-bottom: 0px solid transparent;
+    animation: pointer 6s none 1s linear;
+    opacity: 0;  
+  }
+
+  @keyframes fader{
+    10%{
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100%{
+          opacity: 0;
+    }
+  }
+
+  @keyframes pointer{
+    0%{
+          border-right: 25vh solid var(--earth-pointer-color);
+    }
+    10%{
+          opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100%{
+          border-right: 78vh solid var(--earth-pointer-color);
+          opacity: 0;
+    }
+  }
+
 /* NAVIGATION STYLES*/
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
 }
 
 .topnav a {
   float: right;
   display: block;
-  color: #f2f2f2;
+  color: #6d6b6b;
   text-align: center;
-  padding: 1.7rem 2rem;
+  padding: 1.2rem 2rem;
   text-decoration: none;
   font-size: 21px;
 }
@@ -87,10 +145,7 @@ p{
   color: black;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
+
 
 .topnav .icon {
   display: none;
@@ -119,7 +174,7 @@ p{
 }
 #logo{
   float: left;
-  height: 5.9rem;
+  height: 5.7rem;
 }
 /* The side navigation menu */
 .sidenav {
@@ -194,7 +249,7 @@ h3{
   font-size: 2rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 40rem;
+  max-width: 38rem;
 }
 
 
@@ -217,6 +272,7 @@ h3{
   background-color: #097420;
   border: 3px solid #1abd3d;
   cursor: pointer;
+  margin-top: 190px;
 }
 
 #hero button::hover{
