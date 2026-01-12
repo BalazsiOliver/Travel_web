@@ -78,7 +78,7 @@ body{
     top:14%;
     right: 5%;
     border-radius: 30px;
-    animation: fader 6s none 1s linear;
+    animation: fader 6s infinite 1s linear;
     opacity: 0;
   }
 
@@ -92,8 +92,22 @@ body{
     border-top: 40px solid transparent;
     border-right: 25vh solid var(--earth-pointer-color);
     border-bottom: 0px solid transparent;
-    animation: pointer 6s none 1s linear;
+    animation: pointer 6s infinite 1s linear;
     opacity: 0;  
+  }
+
+  .picture-box{
+    border: 3px solid green;
+    height: 70%;
+    width: 70%;
+    margin: 15%;
+    
+
+  }
+
+  .pointer-img{
+    height: 100%;
+    width: 100%;
   }
 
   @keyframes fader{
