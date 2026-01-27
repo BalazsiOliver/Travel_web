@@ -356,7 +356,8 @@ font-family: "Philosopher", sans-serif;
   font-style: italic;  color: #541405;
 }
 
-h1{
+
+#hero  h1{
   font-size: 6rem;
   margin-top: -62px;
   margin-bottom: 5vw;
@@ -364,14 +365,14 @@ h1{
   text-align: center;
 }
 
-h2{
+#hero h2{
   font-size: 4rem;
   position: relative;
   left: 50px;
   top: 90px;
 }
 
-h3{
+#hero h3{
   position: relative;
   font-size: 3rem;
   max-width: 42rem;
@@ -381,7 +382,7 @@ h3{
 
 
 
-#hero button{
+ button{
   all:unset;
   display: block;
   margin: 60px auto 0 auto;
@@ -406,6 +407,7 @@ h3{
 }
 
 /*CONTENT*/
+/*SPECIAL OFFER*/
 
 #special-offers{
 margin-top: 60px;
@@ -417,19 +419,19 @@ gap: 48px;
 position: relative;
 width: 100%;
 height: 479px;
-background-image: url(img/31_generated.jpg);
-color: #fff;
+color: #111;
 }
 
 #special-offers img{
   width: 20vw;
+  border-radius: 10px;
 }
 
 .special-content{
   flex-direction: column;
 }
 
-h4{
+.special-content h4{
   font-family:  "Raleway", sans-serif;
   padding: 3rem;
   font-size: x-large;
@@ -449,3 +451,54 @@ h4{
   
 }
 
+
+
+/*TRAVEL CONSUELING*/
+
+#travel-counseling img{
+width: 70%;
+display: block;
+margin: 80px auto 0 auto;
+border-radius: 20px;
+}
+
+.features{
+  position: relative;
+}
+
+.features h4, p{
+margin: 30px auto 50px auto;
+text-align: center;
+}
+
+.features h4{
+  font-size: 4rem;
+}
+
+.features p{
+max-width: 50rem;
+}
+
+
+$dash-size: 5px;
+$theme-color: mediumseagreen;
+$fill-color: beige;
+
+
+.box {
+	padding: 60px;
+	max-width: 650px;
+	background: lighten($theme-color, 20%);
+	border: $dash-size dashed $theme-color;
+	box-shadow: 0 0 0 ($dash-size / 2) darken($theme-color, 20%),
+		        0 0 0 ($dash-size * 2.5) #fff,
+		        inset 0 0 0 ($dash-size / 2) darken($theme-color, 20%),
+		        0 $dash-size ($dash-size * 2) ($dash-size * 3) rgba(0,0,0,0.5),
+		        inset 0 0 0 ($dash-size * 1.2) #fff,
+		        inset 0 0 100vw 100vw $fill-color;
+	color: $theme-color;
+	font-family: Marcellus, serif;
+	font-size: 3em;
+	text-shadow: 0 2px #fff;
+	text-align: center;
+}
